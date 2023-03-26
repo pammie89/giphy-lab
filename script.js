@@ -1,6 +1,7 @@
 
 // Define the Giphy API endpoint URL
-const giphyRandomApiUrl = "https://api.giphy.com/v1/gifs/random?api_key=7xgpmaHmwf9d2TVLjgrlE55YdEVdUpgS&tag=&rating=g";
+// const giphyRandomApiUrl = "https://api.giphy.com/v1/gifs/random?api_key=r7knPl50fhvniLPgdv176UT0HY5TGvxf&tag=animals&rating=g";
+const giphyRandomApiUrl = "https://api.giphy.com/v1/gifs/random?api_key=r7knPl50fhvniLPgdv176UT0HY5TGvxf&tag=funny&rating=g";
 
 // Get the img and div elements
 // GRAB THE BUTTON ELEMENT FROM THE DOM
@@ -18,11 +19,12 @@ document.getElementById("getRandomGiphyButton").addEventListener("click", functi
     .then(function(data) {
       // FIND JSON RESPONSE OBJECT AND FIND THE image_url key
 
-      const imageUrl = data.data.image_url;
+      const imageUrl = data.data.url;
       const title = data.data.title;
 
     //   CHANGE THE SRC ATTRIBUTE ON THE IMG TAG TO THE image_url KEY
       giphyImg.setAttribute("src", imageUrl);
+      giphyImg.innerText = imageUrl;
     //   CHANGE THE INNER TEXT OF THE giphyTitleDiv TO  THE title KEY
       giphyTitleDiv.innerText = title;
     })
