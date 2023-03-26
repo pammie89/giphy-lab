@@ -1,6 +1,6 @@
 
 // Define the Giphy API endpoint URL
-const giphyRandomApiUrl = "https://api.giphy.com/v1/gifs/random?api_key=6IBo28rGlWP3o4tRM78Q0NDRhSSrxB8P&tag=&rating=g";
+const giphyRandomApiUrl = "https://api.giphy.com/v1/gifs/random?api_key=7xgpmaHmwf9d2TVLjgrlE55YdEVdUpgS&tag=&rating=g";
 
 // Get the img and div elements
 // GRAB THE BUTTON ELEMENT FROM THE DOM
