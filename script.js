@@ -11,7 +11,7 @@ const giphyTitleDiv = document.getElementById("giphyTitleDiv");
 // ADD A CLICK EVENT LISTENER
 document.getElementById("getRandomGiphyButton").addEventListener("click", function() {
   // Make a fetch GET request to the Giphy API endpoint
-  fetch(giphyRandomApiUrl)
+  fetch(giphyRandomApiUrl, {mode: 'cors'})
     .then(function(response) {
       // Parse the JSON response object
       return response.json();
